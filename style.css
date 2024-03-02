@@ -1,20 +1,82 @@
-@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Roboto Slab', serif;
 }
 
-#main {
-  position: absolute;
-  width: 1000px;
+#first {
+  width: 80px;
+  height: 500px;
+  background-color: tomato;
+}
+
+#check h1 {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#todo-form {
+  margin-left: 40px;
+
+}
+
+#todo-form input {
+  border: none;
+  width: 200px;
+  height: 20px;
+}
+
+#todo-list {
+  list-style: number;
+  margin-left: 20px;
+}
+
+button {
+  margin-right: 30px;
+}
+
+#second {
+  width: 200px;
   height: 500px;
 
-  top: 20%;
-  left: 25%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: whitesmoke;
+  border-style: gray dashed;
+}
 
+#third {
+  width: 700px;
+  height: 500px;
   border-radius: 10px;
-  background-color: white;
+  background-color: whitesmoke;
+
+  display: flex;
+}
+
+#second img {
+  width: 130px;
+  height: 130px;
+  margin: 120px 30px 0px 30px;
+}
+
+#userinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  margin-left: 70px;
+}
+
+#weather {
+  displ
 }
