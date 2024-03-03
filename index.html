@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>main</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
     <div id="first">
@@ -18,32 +19,64 @@
         </div>
    </div>
 
-    <div id="third">
-        <div id="check">
-            <h1>✔ CheckList</h1>
-            <form id="todo-form">
-                <input type="text" placeholder="Write a checklist and Press Enter" required>
-            </form>
-            <ul id="todo-list"></ul>
-        </div>
-        
-        <div id="weather">
-            <span></span>
-            <span></span>
+    <d id="third">
+        <div id="flight-info">
+            <h1>인천 ICN</h1>
+            <h1>✈</h1>
+            <h1>노마드코더 Nomad </h1>
         </div>
 
-        <div id="times">
-            <h2>Current Time</h2>
-            <h2 id="clock">00:00:00</h2>
+        <div id="box">
+            <div id="check">
+                <h1>❗CheckList</h1>
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a checklist and Press Enter" required>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+
+            <div id="info">
+                <div id="times">
+                    <h2>Current Time</h2>
+                    <h1 id="clock">00:00:00</h1>
+                </div>
+                <div id="weather">
+                    <img id="weather-icon">
+                    <span id="weather-weather"></span>
+                    <span id="city"></span>
+                </div>
+
+                <div id="additional">
+                    <h2>Did you check everything? 
+                        <br>Have a nice trip!</h2>
+                    <h4>Additional service</h4>
+                    <span>Youtube</span>
+                    <button id="btn-youtube" >
+                        <img src="img/icon_youtube.png">
+                    </button>
+                    <span>Netflix</span>
+                    <button id="btn-netflix">
+                        <img src="img/icon_netflix.png">
+                    </button>
+                    <span>Google</span>
+                    <button id="btn-google">
+                        <img src="img/icon_google.png">
+                    </button>
+
+                </div>
+            </div>
+            
         </div>
    </div>
         
-    
-
 </body>
 <script src="js/background.js"></script>
 <script src="js/todo.js"></script>
 <script src="js/weather.js"></script>
 <script src="js/clock.js"></script>
+<script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+  ></script>
 
 </html>

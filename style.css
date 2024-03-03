@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
 body {
   height: 100vh;
@@ -7,44 +8,64 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-family: 'Roboto Slab', serif;
 }
 
 #first {
   width: 80px;
-  height: 500px;
-  background-color: tomato;
+  height: 600px;
+  background-color: #5BB9D2;
 }
 
 #check h1 {
   margin-top: 40px;
-  margin-left: 40px;
+  margin-left: 75px;
 }
 
 #todo-form {
-  margin-left: 40px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #todo-form input {
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  font-family: "Noto Serif KR", serif;
   border: none;
-  width: 200px;
-  height: 20px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-style: solid;
+  border-bottom-color: black;
 }
+
+#todo-form input::placeholder {
+  color: rgba(0, 0, 0, 0.522);
+}
+
+#todo-form input:focus {
+  border-bottom-color: rgba(0, 162, 255, 0.829);
+  transition: all 0.5s;
+}
+
+#todo-form input:focus::placeholder {
+  color: transparent;
+  transition: all 0.5s;
+}
+
 
 #todo-list {
   list-style: number;
   margin-left: 20px;
-}
-
-button {
-  margin-right: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Noto Serif KR", serif;
 }
 
 #second {
   width: 200px;
-  height: 500px;
+  height: 600px;
 
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -52,19 +73,10 @@ button {
   border-style: gray dashed;
 }
 
-#third {
-  width: 700px;
-  height: 500px;
-  border-radius: 10px;
-  background-color: whitesmoke;
-
-  display: flex;
-}
-
 #second img {
   width: 130px;
   height: 130px;
-  margin: 120px 30px 0px 30px;
+  margin: 200px 30px 0px 30px;
 }
 
 #userinfo {
@@ -73,10 +85,103 @@ button {
   align-items: center;
 }
 
-h3 {
+#second h3 {
   margin-left: 70px;
 }
 
-#weather {
-  displ
+#third {
+  width: 900px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: whitesmoke;
 }
+
+#box {
+  display: flex;
+  margin-top: 0px;
+  width: 900px;
+}
+
+#flight-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+
+#check {
+  width: 380px;
+  height: 480px;
+  background-color: rgba(91, 184, 210, 0.6);
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+#check h1 {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#info {
+  width: 380px;
+  height: 220px;
+  margin-left: 65px;
+  background-color: rgba(91, 184, 210, 0.6);
+  border-radius: 15px;
+}
+
+#times {
+  text-align: center;
+}
+
+#weather {
+  font-size: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weather-icon {
+  
+}
+
+#weather span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#additional {
+  flex-wrap: wrap;
+  width: 380px;
+  height: 220px;
+  margin-top: 30px;
+}
+
+#additional h2 {
+  text-align: center;
+}
+
+#additional img {
+  width: 30px;
+  height: 30px;
+}
+
+#additional button {
+  border: none;
+  background-color: whitesmoke;
+}
+
+#additional span {
+  margin-left: 20px;
+}
+
+#additional h4 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
