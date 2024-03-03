@@ -8,7 +8,12 @@ function btnClick (event){
     const username = nameInput.value;
     localStorage.setItem("username", username);
 
-    window.location.href = "index.html?";
+    if (username == "") {
+        alert("Please write your name");
+    }
+    else {
+        window.location.href = "main.html?";
+    }
 }
 
 flightBtn.addEventListener("click", btnClick);

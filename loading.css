@@ -24,7 +24,7 @@ input {
     margin-left: 10px;
     border: none;
     outline: none;
-    width: 230px;
+    width: 400px;
     height: 25px;
     background: none;
     font-size: 20px;
@@ -40,6 +40,12 @@ input::placeholder {
 
 input:focus::placeholder {
     color: transparent;
+    transition: all 0.5s;
+}
+
+input:focus {
+    border-bottom-color: rgba(0, 162, 255, 0.829);
+    transition: all 0.5s;
 }
 
 #txt {
@@ -48,4 +54,29 @@ input:focus::placeholder {
     justify-content: center;
 }
 
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 200px;
+    height: 200px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
 
+
+button:hover, img:hover {
+    animation-duration: 2s;
+    animation-name: rainbowLink;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbowLink {
+    0% { color: #ff2a2a; }
+    15% { color: #ff7a2a; }
+    30% { color: #ffc52a; }
+    45% { color: #43ff2a; }
+    60% { color: #2a89ff; }
+    75% { color: #202082; }
+    90% { color: #6b2aff; }
+    100% { color: #e82aff; }
+}

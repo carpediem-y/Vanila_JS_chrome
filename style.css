@@ -9,6 +9,16 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto Slab', serif;
+  animation: fadein 2s linear;
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 #first {
@@ -16,12 +26,6 @@ body {
   height: 600px;
   background-color: #5BB9D2;
 }
-
-#check h1 {
-  margin-top: 40px;
-  margin-left: 75px;
-}
-
 #todo-form {
   display: flex;
   justify-content: center;
@@ -80,13 +84,11 @@ body {
 }
 
 #userinfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 #second h3 {
-  margin-left: 70px;
+text-align: center;
 }
 
 #third {
@@ -107,20 +109,20 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0px 50px;
+  font-family: "Noto Serif KR", serif;
 }
 
 #check {
   width: 380px;
-  height: 480px;
+  height: 500px;
   background-color: rgba(91, 184, 210, 0.6);
   margin-left: 30px;
   border-radius: 15px;
 }
 
 #check h1 {
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 #info {
