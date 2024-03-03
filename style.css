@@ -62,7 +62,7 @@ body {
 #todo-list {
   list-style: number;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Noto Serif KR", serif;
 }
@@ -114,7 +114,7 @@ text-align: center;
 
 #check {
   width: 380px;
-  height: 500px;
+  height: 495px;
   background-color: rgba(91, 184, 210, 0.6);
   margin-left: 30px;
   border-radius: 15px;
@@ -146,7 +146,8 @@ text-align: center;
 }
 
 #weather-icon {
-  
+  width: 100px;
+  height: 90px;
 }
 
 #weather span {
